@@ -1,16 +1,13 @@
 "use strict";
+/*
+*用户登录model
+*/
 var UserLogin = (function () {
     function UserLogin() {
     }
     return UserLogin;
 }());
 exports.UserLogin = UserLogin;
-var Coord = (function () {
-    function Coord() {
-    }
-    return Coord;
-}());
-exports.Coord = Coord;
 var UserInfo_Model = (function () {
     function UserInfo_Model() {
     }
@@ -35,4 +32,16 @@ var UserInfoCondition = (function () {
     return UserInfoCondition;
 }());
 exports.UserInfoCondition = UserInfoCondition;
+var AdminEditUserInfo = (function () {
+    function AdminEditUserInfo() {
+    }
+    return AdminEditUserInfo;
+}());
+exports.AdminEditUserInfo = AdminEditUserInfo;
+var Coord = (function () {
+    function Coord() {
+    }
+    return Coord;
+}());
+exports.Coord = Coord;
 //# sourceMappingURL=user-info.model.js.map
