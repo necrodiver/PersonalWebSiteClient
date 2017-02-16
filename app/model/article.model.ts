@@ -10,5 +10,8 @@ export class Article_Model {
 export class ArticleCondition_Model {
     NickName: string;
     ArticleSortId?: number;
-
+    ArticleName: string;
+    FirstTime: string;
+    LastTime: string;
+    PageIndex?: number;
 }
