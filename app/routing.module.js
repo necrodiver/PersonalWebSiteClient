@@ -6,24 +6,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./component/app.component");
+var router_1 = require("@angular/router");
 var master_component_1 = require("./component/master.component");
-var AppModule = (function () {
-    function AppModule() {
+var routes = [
+    { path: '', redirectTo: '/index', pathMatch: 'full' },
+    { path: '', redirectTo: '/', pathMatch: 'full' },
+    { path: 'index', component: master_component_1.MasterComponent },
+];
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
     }
-    return AppModule;
+    return AppRoutingModule;
 }());
-AppModule = __decorate([
+AppRoutingModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [
-            app_component_1.AppComponent,
-            master_component_1.MasterComponent
-        ],
-        providers: [],
-        bootstrap: [app_component_1.AppComponent]
+        imports: [router_1.RouterModule.forRoot(routes)],
+        exports: [router_1.RouterModule]
     })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], AppRoutingModule);
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=routing.module.js.map
