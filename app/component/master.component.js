@@ -20,7 +20,7 @@ MasterComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'master-layout',
-        templateUrl: '../html/master.component.html'
+        templateUrl: '../html/master.component.html',
     }),
     __metadata("design:paramtypes", [])
 ], MasterComponent);
